@@ -6,6 +6,7 @@ const peerServer = PeerServer({
   port: PORT,
   path: "/peerjs",
   allow_discovery: true,
+  proxied: true,
   corsOptions: {
     origin: "*",
     methods: ["GET", "POST", "OPTIONS"],
